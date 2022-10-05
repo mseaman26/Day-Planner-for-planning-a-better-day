@@ -3,8 +3,9 @@ $(document).ready(function(){
     //TODO: delete hours and minutes
 
 
-    $("#currentDay").text(moment().format("dddd, MMMM Do YYYY, H:mm:ss a"))
-
+    // $("#currentDay").text(moment().format("dddd, MMMM Do YYYY, H:mm:ss a"))
+    $("#currentDay").text(moment().format("dddd, MMMM Do YYYY"))
+    
     function populateRows(presentTime){
         for(var i = 9;i<=17;i++){
             createRow(i, presentTime)
@@ -17,10 +18,8 @@ $(document).ready(function(){
         var militaryTime = hour
 
         if(hour > 11){
-            console.log(true)
             amPm = "pm"
         }
-        console.log(amPm)
         if(hour>12){
             hour = hour-12
         }
@@ -34,19 +33,20 @@ $(document).ready(function(){
 
         row1.addClass("row")
         text1.addClass("present col-md-10")
-        save1.addClass("saveBtn col-md-1")
         hour1.addClass("hour col-md-1")
+        save1.addClass("saveBtn col-md-1 ui-icon-disk")
+
+        row1.attr("id", "row"+militaryTime)
+        console.log(row1.attr("id"))
+
 
         if(presentTime>militaryTime){
-            console.log("future")
             text1.removeClass()
             text1.addClass("past col-md-10")
         }else if(presentTime == militaryTime){
-            console.log("present")
             text1.removeClass()
             text1.addClass("present col-md-10")
         }else if(presentTime<militaryTime){
-            console.log("past")
             text1.removeClass()
             text1.addClass("future col-md-10")
         }
@@ -60,8 +60,8 @@ $(document).ready(function(){
         row1.append(save1)
     }
     
-    populateRows(12)
-
+    // populateRows((moment().format("H")))
+    populateRows(12)  //used to test different time values
 })
 
 
