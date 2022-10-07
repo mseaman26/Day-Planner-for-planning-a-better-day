@@ -57,8 +57,8 @@ And here is the code that does the color coding for past, present, and future.  
 ```
 
 ## Learning Points From This Project
--Although this project is simpler than some of the previous, I feel like I learned to keep the code more organized
--I learned to pseudo code more and to relax and think before I code
--This was my first project with JQuery and a third-party API
+- Although this project is simpler than some of the previous, I feel like I learned to keep the code more organized
+- I learned to pseudo code more and to relax and think before I code
+- This was my first project with JQuery and a third-party API
 
 ## -By Mike Seaman
