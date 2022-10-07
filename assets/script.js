@@ -88,7 +88,6 @@ $(document).ready(function(){
 
 //=============================Code Exeution for loading page=============================
 populateRows(currentHour)//<-----------------uses the actual current time
-// populateRows(15)  //<-----------------------uses test values for presentTime if desired
 populateTextAreas()
 })
     
