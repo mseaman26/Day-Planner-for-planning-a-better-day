@@ -11,18 +11,18 @@ https://mseaman26.github.io/Day-Planner-for-planning-a-better-day/
 This project involved writing code solely in Javascript.  It features use of JQuery.  The pre-existing code was written in HTML and CSS, and featured bootstrap styling
 
 ## Notable Features
--This project utilizes a third-party API, called Moment.js.  This allows access to data regarding the exact current time.  
--This project features a sigle event listener that utilizes the .target method to make multiple buttons carry out unique tasks
--Using local storage, the user can count on their saved plans to be there regardless of a page refresh
--The page updates in real time, including the date/time at the top, as well as the color coding of the rows
+- This project utilizes a third-party API, called Moment.js.  This allows access to data regarding the exact current time.  
+- This project features a sigle event listener that utilizes the .target method to make multiple buttons carry out unique tasks
+- Using local storage, the user can count on their saved plans to be there regardless of a page refresh
+- The page updates in real time, including the date/time at the top, as well as the color coding of the rows
 
 ## Notable Methods
--A setInterval function is used to keep the time updating once every second. There is code that looks for a change in value of the hour, which triggers the re-coloring of the rows
--The elements on this page were created and given attributes dynamically, reducing the lines of code required for the project
--As mentioned earlier, there is a single event listener that handles all of the save buttons by utilizing the .target method
--I wrote code to differentiate both military time (useful for most of the algorithms) and standard time (looks better on the displays). I could have used Moment.js for both of these values, but I enjoyed writing the code for the standard time.
--class names that adhere to bootstrap functionality, allowing for simpler styling, particularly the grid layout
--Utilizing multiple formats from Moment.js
+- A setInterval function is used to keep the time updating once every second. There is code that looks for a change in value of the hour, which triggers the re-coloring of the rows
+- The elements on this page were created and given attributes dynamically, reducing the lines of code required for the project
+-A s mentioned earlier, there is a single event listener that handles all of the save buttons by utilizing the .target method
+- I wrote code to differentiate both military time (useful for most of the algorithms) and standard time (looks better on the displays). I could have used Moment.js for both of these values, but I enjoyed writing the code for the standard time.
+- class names that adhere to bootstrap functionality, allowing for simpler styling, particularly the grid layout
+- Utilizing multiple formats from Moment.js
 
 ## My favorite Bit of Code in This project
 This piece of code is responsible for the live updating of the date at the top of the page (every second) and the live re-coloring of the rows (every hour)
