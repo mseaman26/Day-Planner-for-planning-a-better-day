@@ -19,7 +19,7 @@ This project involved writing code solely in Javascript.  It features use of JQu
 ## Notable Methods
 - A setInterval function is used to keep the time updating once every second. There is code that looks for a change in value of the hour, which triggers the re-coloring of the rows
 - The elements on this page were created and given attributes dynamically, reducing the lines of code required for the project
--A s mentioned earlier, there is a single event listener that handles all of the save buttons by utilizing the .target method
+- A s mentioned earlier, there is a single event listener that handles all of the save buttons by utilizing the .target method
 - I wrote code to differentiate both military time (useful for most of the algorithms) and standard time (looks better on the displays). I could have used Moment.js for both of these values, but I enjoyed writing the code for the standard time.
 - class names that adhere to bootstrap functionality, allowing for simpler styling, particularly the grid layout
 - Utilizing multiple formats from Moment.js
