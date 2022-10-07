@@ -2,8 +2,7 @@ $(document).ready(function(){
    
     //variable for uptating the row colors
     var currentHour = (moment().format("H"))
-    console.log(currentHour)
-    //uptades currentHour and the displayed date/time and repopulates the rows every second
+    //uptades currentHour and the displayes date/time every second
     //also redraws the page if the hour changes, in order to keep the color coding of the rows up to date!
     setInterval(function(){
         var previousHour = currentHour
@@ -13,13 +12,8 @@ $(document).ready(function(){
             $(".container").empty()
             populateRows(currentHour)
             populateTextAreas()
-            console.log(currentHour)
-            
-
         }
-        $("#currentDay").text(moment().format("dddd, MMMM Do YYYY, h:mm a")) 
-
-      
+        $("#currentDay").text(moment().format("dddd, MMMM Do YYYY, h:mm a"))  
     }, 1000)
 
         //Retrieves saved text from local storage and adds it to the correct text areas on the planner
