@@ -1,13 +1,13 @@
 $(document).ready(function(){
    
     //variable for uptating the row colors
-    var currentHour = (moment().format("H"))-4
+    var currentHour = (moment().format("H"))
     console.log(currentHour)
     //uptades currentHour and the displayed date/time and repopulates the rows every second
     //also redraws the page if the hour changes, in order to keep the color coding of the rows up to date!
     setInterval(function(){
         var previousHour = currentHour
-        currentHour = (moment().format("H"))-4
+        currentHour = (moment().format("H"))
         if(currentHour != previousHour){
             //redraw the rows
             $(".container").empty()
